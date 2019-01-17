@@ -43,7 +43,7 @@ military <- function(x){
 #set up weather continued
 sunlight <- military(sunrise)
 moonlight <- military(sunset)
-#I  have no idea what this is supposed to be
+#I  have no idea what this actually does
 moonx <- ((moonlight + (24 - moonlight + sunlight) %% 24)/24)/12
 temperature <- dat$results$channel$item$condition[3]
 weather <- dat$results$channel$item$condition[4]
